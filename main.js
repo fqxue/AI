@@ -1,5 +1,6 @@
 function setLoading(isLoading) {
 	document.getElementById('loading').style.display = isLoading ? 'block' : 'none';
+	document.getElementById('response').style.display = isLoading ? 'none' : 'block';
 }
 
 function sendMessage() {
