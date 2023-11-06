@@ -23,7 +23,7 @@ function sendMessage() {
 			.then(data => {
 				if (data.code === 200) {
 					var outputText = data.data.output;
-					document.getElementById('response').innerHTML = `${outputText}`;
+					document.getElementById('response').innerText = `${outputText}`;
 				} else {
 					document.getElementById('response').textContent = '错误: ' + data.code;
 				}
