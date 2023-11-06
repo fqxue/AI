@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>AI</h1>
+    <!-- 添加一个下拉选择框来选择API -->
+    <div class="select-wrapper">
+        <select id="apiSelect">
+            <option value="xh">讯飞星火</option>
+            <option value="wx">文心一言</option>
+        </select>
+    </div>
+    <div class="select-wrapper">
+        <input type="text" id="message" placeholder="输入你的消息">
+    </div>
+    <button id="sendButton" onclick="sendMessage()">发送</button>
+    <p id="response"></p>
+    <p id="loading">等待中...</p> <!-- 加载提示 -->
+</body>
+
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
